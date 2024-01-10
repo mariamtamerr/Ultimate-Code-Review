@@ -24,7 +24,7 @@ const Testimonials = () => {
         <Image src={urbanPro} alt='urbanPro' ></Image>
 
         <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-          " I&apos;m absolutely floored by the level of care and attention to detail the team at HS have put into this theme and for one can guarantee that I will be a return customer. "
+        &quot; I&apos;m absolutely floored by the level of care and attention to detail the team at HS have put into this theme and for one can guarantee that I will be a return customer. &quot;
         </em></p>
       </div>
 
@@ -44,7 +44,7 @@ const Testimonials = () => {
       <div className="flex-auto p-4 md:p-6">
       <Image src={privateTutor} alt='privateTutor' ></Image>
         <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-          " With Preline, we&apos;re able to easily track our performance in full detail. It&apos;s become an essential tool for us to grow and engage with our audience. "
+        &quot; With Preline, we&apos;re able to easily track our performance in full detail. It&apos;s become an essential tool for us to grow and engage with our audience. &quot;
         </em></p>
       </div>
 
@@ -64,7 +64,7 @@ const Testimonials = () => {
       <div className="flex-auto p-4 md:p-6">
       <Image src={learnPick} alt='learnPick' ></Image>
         <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-          " With Preline, we&apos;re able to easily track our performance in full detail. It&apos;s become an essential tool for us to grow and engage with our audience. "
+        &quot; With Preline, we&apos;re able to easily track our performance in full detail. It&apos;s become an essential tool for us to grow and engage with our audience. &quot;
         </em></p>
       </div>
 
@@ -84,7 +84,7 @@ const Testimonials = () => {
       <div className="flex-auto p- md:p-6">
         <Image src={teacheron} alt='teacheron' className='-mt-7' ></Image>
         <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-          " In September, I will be using this theme for 2 years. I went through multiple updates and changes and I&apos;m very glad to see the consistency and effort made by the team. "
+        &quot; In September, I will be using this theme for 2 years. I went through multiple updates and changes and I&apos;m very glad to see the consistency and effort made by the team. &quot;
         </em></p>
       </div>
 
