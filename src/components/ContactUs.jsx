@@ -11,7 +11,7 @@ const ContactUs = () => {
         Contact us
       </h1>
       <p className="mt-1 text-gray-600 dark:text-gray-400">
-        We'd love to talk about how we can help you.
+        We&apos;d love to talk about how we can help you.
       </p>
     </div>
 
@@ -61,7 +61,7 @@ const ContactUs = () => {
 
           <div className="mt-3 text-center">
             <p className="text-sm text-gray-500">
-              We'll get back to you in 1-2 business days.
+              We&apos;ll get back to you in 1-2 business days.
             </p>
           </div>
         </form>
@@ -74,7 +74,7 @@ const ContactUs = () => {
           <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-xl text-blue-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
           <div className="grow">
             <h3 className="font-semibold text-xl text-blue-800 dark:text-gray-200">Knowledgebase</h3>
-            <p className="mt-1 mb-10 text-md text-gray-500">We're here to help with any questions or code.</p>
+            <p className="mt-1 mb-10 text-md text-gray-500">We&apos;re here to help with any questions or code.</p>
             {/* <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
               Contact support
               <svg className="flex-shrink-0 w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -12,7 +12,7 @@ const Footer = () => {
     {/* <!-- End Col --> */}
 
     <div className="mt-3">
-      <p className=" text-slate-400">We're part of the <a className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="https://cystorm.solutions/" target='_blank'>Cystorm.Solutions</a> family.</p>
+      <p className=" text-slate-400">We&apos;re part of the <a className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="https://cystorm.solutions/" target='_blank'>Cystorm.Solutions</a> family.</p>
       <p className="text-slate-400">© Ultimate Code Review. 2024. All rights reserved.</p>
     </div>
 
