@@ -16,7 +16,7 @@ const About = () => {
       About Us
       </h2>
       <p className="mt-2 md:mt-4 text-gray-500">
-      Ultimate Code Review is a global Information Security Consulting firm, based in the US, UK, Singapore & India. Our Cyber Security Consulting solution is a blend of Compliance & Regulatory Consulting Services comprising of IT Audits, Risk & Security Management solutions, and Training Programs. We have been working with top multinational companies across the globe to address their Compliance, Regulatory, and Information Security challenges of their industry.
+      UltimateCodeReview is a part of Cystorm.Solutions family, focusing on delivering premium services in cybersecurity, web development, and secure coding. Our steadfast dedication revolves around crafting solutions meticulously tailored to perfectly suit your unique needs.
       </p>
     </div>
     {/* <!-- End Col --> */}

@@ -97,15 +97,15 @@ const Pricing2 = () => {
 
  
     {/* <!-- Card --> */}
-    <div className="flex flex-col bg-white border border-gray-200 text-center rounded-xl p-8 dark:border-gray-700">
+    <div className="flex flex-col h-96 bg-white border border-gray-200 text-center rounded-xl p-8 dark:border-gray-700">
       <h4 className="font-medium text-lg text-gray-800 dark:text-gray-200">Enterprise</h4>
       <span className="mt-2 font-bold text-4xl text-gray-800 dark:text-gray-200">
         <span className="font-bold  -me-2"></span>
         Contact Us
       </span>
-      <p className="mt-2 text-sm text-gray-500">Advanced features for scaling your business</p>
+      <p className="mt-5 text-sm text-gray-500">Advanced features for scaling your business</p>
 
-      <ul className="mt-7 space-y-2.5 text-sm">
+      {/* <ul className="mt-7 space-y-2.5 text-sm">
         <li className="flex space-x-2">
           <svg className="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 dark:text-gray-400">
@@ -126,9 +126,9 @@ const Pricing2 = () => {
            Web App
           </span>
         </li>
-      </ul>
+      </ul> */}
 
-      <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#contact-us">
+      <a className="mt-32 py-3 px-4 inline-flex justify-center items-end  gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#contact-us">
         Get Started
       </a>
     </div>
