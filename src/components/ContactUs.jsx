@@ -4,12 +4,31 @@ import { useState } from "react";
 const ContactUs = () => {
 
 
-  const [category, setCategory] = useState('');
+  const [category1, setCategory1] = useState('');
+  const [category2, setCategory2] = useState('');
+  const [category3, setCategory3] = useState('');
+  const [category4, setCategory4] = useState('');
 
-  const handleCategoryChange = (category) => {
-     setCategory(category);
-     console.log(category);
+  const handleCategoryChange1 = (category1) => {
+     setCategory1(category1);
+     console.log(category1);
  }
+
+ const handleCategoryChange2 = (category2) => {
+  setCategory2(category2);
+  console.log(category2);
+}
+
+const handleCategoryChange3 = (category3) => {
+  setCategory3(category3);
+  console.log(category3);
+}
+
+
+const handleCategoryChange4 = (category4) => {
+  setCategory4(category4);
+  console.log(category4);
+}
 
 
   return (
@@ -77,7 +96,7 @@ const ContactUs = () => {
 
             <div className="bg-white mx-auto">
             <label className="text-blue-600 font-medium">Web Development</label>
-               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)} required>
+               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category1" value={category1} onChange={event => handleCategoryChange1(event.target.value)} required>
                   <option id="0" >yes</option>
                   <option id="1" >no</option>
               </select>
@@ -85,7 +104,7 @@ const ContactUs = () => {
 
 
             <div className="">
-               <select className="bg-white lg:mt-7 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
+               <select className="bg-white lg:mt-7 px-4 py-3 border border-blue-600 rounded-xl" name="category2" value={category2} onChange={event => handleCategoryChange2(event.target.value)}>
                   <option id="2" >Startup</option>
                   <option id="3" >Team</option>
                   <option id="4" >Enterprise</option>
@@ -98,7 +117,7 @@ const ContactUs = () => {
 
             <div className="bg-white mx-auto">
             <label className="text-blue-600 font-medium">Cyber Security</label>
-               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)} required>
+               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category3" value={category3} onChange={event => handleCategoryChange3(event.target.value)} required>
                   <option id="5" >yes</option>
                   <option id="6" >no</option>
               </select>
@@ -106,7 +125,7 @@ const ContactUs = () => {
 
 
             <div>
-               <select className="bg-white px-4 lg:mt-6 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
+               <select className="bg-white px-4 lg:mt-6 py-3 border border-blue-600 rounded-xl" name="category4" value={category4} onChange={event => handleCategoryChange4(event.target.value)}>
                   <option id="7" >Free</option>
                   <option id="8" >Enterprise</option>
               </select>
