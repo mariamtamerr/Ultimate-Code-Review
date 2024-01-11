@@ -15,9 +15,10 @@ const Header = () => {
         
       {/* <!-- Title --> */}
       <div className="max-w-3xl flex justify-center text-center mx-auto">
-        <Image className='h-32 w-32 rounded-full' src={logo} alt='logo'></Image>
-        <h1 className="block font-medium lg:mt-14  sm:mt-14  ml-5 text-gray-200  text-4xl">
-          Ultimate Code Review
+        <Image className='h-16 w-16 rounded-full' src={logo} alt='logo'></Image>
+       {/* <h1 className='text-white text-8xl ml-5 mt-5 '>|</h1> */}
+        <h1 className="block font-medium  mt-3  ml-5 text-gray-200  text-4xl">
+          | Ultimate Code Review
         </h1>
       </div>
       {/* <!-- End Title --> */}
@@ -28,7 +29,7 @@ const Header = () => {
 
       {/* <!-- Buttons --> */}
       <div className="text-center">
-        <a className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800" href="#">
+        <a className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800" href="#contact-us">
           Get started
           <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </a>

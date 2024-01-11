@@ -1,8 +1,19 @@
-import React from 'react'
+"use client"
+import { useState } from "react";
 
 const ContactUs = () => {
+
+
+  const [category, setCategory] = useState('');
+
+  const handleCategoryChange = (category) => {
+     setCategory(category);
+     console.log(category);
+ }
+
+
   return (
-    <div>
+    <div> 
       {/* <!-- Contact Us --> */}
 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div className="max-w-2xl lg:max-w-5xl mx-auto">
@@ -22,25 +33,94 @@ const ContactUs = () => {
           Fill in the form
         </h2>
 
-        <form>
+        <form action="https://api.web3forms.com/submit" target="_blank" method="POST">
+
+        <input type="hidden" name="access_key" value="24ae8449-c7be-42bc-a382-85d5f1d06b1f"/>
+
           <div className="grid gap-4">
             {/* <!-- Grid --> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label for="hs-firstname-contacts-1" className="sr-only">First Name</label>
-                <input style={{border:"1px solid blue"}} type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" className="py-3 px-4 block w-full  border-blue-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="First Name"/>
+                <input style={{border:"1px solid blue"}} type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" className="py-3 px-4 block w-full  border-blue-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="First Name" required  />
               </div>
 
               <div>
                 <label for="hs-lastname-contacts-1" className="sr-only">Last Name</label>
-                <input style={{border:"1px solid blue"}} type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Last Name"/>
+                <input style={{border:"1px solid blue"}} type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Last Name" required />
               </div>
+
+
+              {/* <div className="relative inline-block text-left">
+              <div>
+                <button type="button" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  Options
+                  <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+
+              
+              <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div className="py-1" role="none">
+                <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+                  <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+                  <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                  <form method="POST" action="#" role="none">
+                    <button type="submit" className="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
+                  </form>
+                </div>
+              </div>
+            </div> */}
+
+            <div className="bg-white mx-auto">
+            <label className="text-blue-600 font-medium">Web Development</label>
+               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)} required>
+                  <option id="0" >yes</option>
+                  <option id="1" >no</option>
+              </select>
+            </div>
+
+
+            <div>
+               <select className="bg-white px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
+                  <option id="2" >Startup</option>
+                  <option id="3" >Team</option>
+                  <option id="4" >Enterprise</option>
+              </select>
+            </div>
+
+
+
+            <div className="bg-white mx-auto">
+            <label className="text-blue-600 font-medium">Cyber Security</label>
+               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)} required>
+                  <option id="5" >yes</option>
+                  <option id="6" >no</option>
+              </select>
+            </div>
+
+
+            <div>
+               <select className="bg-white px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
+                  <option id="7" >Free</option>
+                  <option id="8" >Enterprise</option>
+              </select>
+            </div>
+
+            
+
+           
+
+
+             
             </div>
             {/* <!-- End Grid --> */}
 
             <div>
               <label for="hs-email-contacts-1" className="sr-only">Email</label>
-              <input style={{border:"1px solid blue"}} type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Email"/>
+              <input style={{border:"1px solid blue"}} type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Email" required />
             </div>
 
             <div>
@@ -50,7 +130,7 @@ const ContactUs = () => {
 
             <div>
               <label for="hs-about-contacts-1" className="sr-only">Details</label>
-              <textarea style={{border:"1px solid blue"}} id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Details"></textarea>
+              <textarea style={{border:"1px solid blue"}} id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Details" required ></textarea>
             </div>
           </div>
           {/* <!-- End Grid --> */}
@@ -121,7 +201,7 @@ const ContactUs = () => {
         <div className=" flex gap-x-7 py-6">
           <svg className="flex-shrink-0 text-xl w-6 h-6 mt-1.5 text-blue-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/></svg>
           <div className="grow">
-            <h3 className="font-semibold text-xl mt-10 text-blue-800 dark:text-gray-200">Contact us by email</h3>
+            <h3 className="font-semibold text-xl  text-blue-800 dark:text-gray-200">Contact us by email</h3>
             <p className="mt-1 text-md text-gray-500">If you wish to write us an email instead please use</p>
             <a className="mt-2 inline-flex items-center gap-x-2 text-lg font-extrabold text-black hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
             info@cystorm.solutions

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
+import Pricing2 from "@/components/Pricing2";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
@@ -31,9 +32,14 @@ export default function Home() {
 
       {/* sign up and prices  */}
       <Pricing/>
+      <Pricing2/>
 
       {/* Contact Us */}
-      <ContactUs/>
+      <div id="contact-us">
+        <ContactUs/>
+      </div>
+
+      
 
       {/* footer */}
       <Footer/>
