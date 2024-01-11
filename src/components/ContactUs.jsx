@@ -74,6 +74,7 @@ const ContactUs = () => {
               </div>
             </div> */}
 
+
             <div className="bg-white mx-auto">
             <label className="text-blue-600 font-medium">Web Development</label>
                <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)} required>
@@ -83,13 +84,15 @@ const ContactUs = () => {
             </div>
 
 
-            <div>
-               <select className="bg-white px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
+            <div className="">
+               <select className="bg-white lg:mt-7 px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
                   <option id="2" >Startup</option>
                   <option id="3" >Team</option>
                   <option id="4" >Enterprise</option>
               </select>
             </div>
+
+
 
 
 
@@ -103,16 +106,14 @@ const ContactUs = () => {
 
 
             <div>
-               <select className="bg-white px-4 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
+               <select className="bg-white px-4 lg:mt-6 py-3 border border-blue-600 rounded-xl" name="category" value={category} onChange={event => handleCategoryChange(event.target.value)}>
                   <option id="7" >Free</option>
                   <option id="8" >Enterprise</option>
               </select>
             </div>
+   
 
             
-
-           
-
 
              
             </div>
