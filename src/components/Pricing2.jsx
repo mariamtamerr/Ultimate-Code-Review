@@ -128,7 +128,7 @@ const Pricing2 = () => {
         </li>
       </ul>
 
-      <a className="mt-32 py-3 px-4 inline-flex justify-center items-end  gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#contact-us">
+      <a className="mt-10 py-3 px-4 inline-flex justify-center items-end  gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-500 hover:text-white disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#contact-us">
         Get Started
       </a>
     </div>
