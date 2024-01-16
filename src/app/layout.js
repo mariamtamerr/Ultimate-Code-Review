@@ -4,7 +4,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Ultimate Code Review',
+  title: 'Ultimatecodereview - Cystorm.Solutions',
   description: 'Ultimate code review',
 }
 
