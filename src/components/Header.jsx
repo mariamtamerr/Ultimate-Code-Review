@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       {/* <!-- Hero --> */}
-<div className="bg-slate-900 pt-20 pb-28">
+<div className="bg-slate-900  pb-28">
 
 <ParticlesBackground />
   <div className="bg-gradient-to-b from-violet-600/[.15] via-transparent">

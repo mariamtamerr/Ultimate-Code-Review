@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className=''>
       {/* <!-- ========== HEADER ========== --> */}
-<header className="sm:flex bg-slate-900 pb-28 sm:justify-start sm:flex-nowrap z-50 sm:w-full fixed text-white text-sm sm:py-0  dark:bg-gray-800 dark:border-gray-700">
+<header className="sm:flex bg-slate-900  sm:justify-start sm:flex-nowrap z-50 sm:w-full fixed text-white text-sm sm:py-0  dark:bg-gray-800 dark:border-gray-700">
   <nav className="relative  max-w-[85rem] w-full mx-auto px-4 sm:flex  sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
     <div className="flex items-center justify-between">
       <div className='flex'>
