@@ -33,7 +33,7 @@ const Clients = () => {
      {/* <!-- Card --> */}
      <div className="group flex flex-col h-full bg-white  border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]  hover:-translate-y-10 hover:animate-bounce ">
       <div className="h-52 flex flex-col justify-center items-center rounded-t-xl">
-       <Image src={learnPick} className='h-10 lg:h-auto' alt='learnPick'></Image>
+       <Image src={learnPick} className='sm:h-10 h-7 w-60 lg:h-auto' alt='learnPick'></Image>
       </div>
      
       

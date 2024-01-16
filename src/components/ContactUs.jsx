@@ -94,20 +94,57 @@ const handleCategoryChange4 = (category4) => {
             </div> */}
 
 
-            <div className="bg-white mx-auto">
-            <label className="text-blue-600 font-medium">Web Development</label>
-               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category1" value={category1} onChange={event => handleCategoryChange1(event.target.value)} required>
+            {/* <div className="bg-white  mx-auto">
+            <label className="text-blue-600  text-center mb-5 font-medium">Web Development</label>
+               <select className="bg-white ml-2 flex px-4 py-3 border border-blue-600 rounded-xl" name="category1" value={category1} onChange={event => handleCategoryChange1(event.target.value)} required>
                   <option id="0" >yes</option>
                   <option id="1" >no</option>
               </select>
             </div>
 
 
-            <div className="">
-               <select className="bg-white lg:mt-7 px-4 py-3 border border-blue-600 rounded-xl" name="category2" value={category2} onChange={event => handleCategoryChange2(event.target.value)}>
-                  <option id="2" >Startup</option>
-                  <option id="3" >Team</option>
-                  <option id="4" >Enterprise</option>
+            <div className="mx-auto">
+               <select className="bg-white lg:mt-7  px-4 py-3 border border-blue-600 rounded-xl" name="category2" value={category2} onChange={event => handleCategoryChange2(event.target.value)}>
+                  <option id="2" >None</option>
+                  <option id="3" >Startup</option>
+                  <option id="4" >Team</option>
+                  <option id="5" >Enterprise</option>
+              </select>
+            </div> */}
+
+
+            <div className="bg-white flex mt-7 sm:gap-10 gap-2 sm:mb-10 ">
+              <div>
+                <label className="text-blue-600  mb-5 font-medium">Web Development</label>
+              </div>
+              <div>
+                <select className="bg-white px-4 py-2 border border-blue-600 rounded-xl" name="category1" value={category1} onChange={event => handleCategoryChange1(event.target.value)} required>
+                  <option id="0" >yes</option>
+                  <option id="1" >no</option>
+              </select>
+              </div>
+              <div>
+                <select className="bg-white px-4 py-3 border border-blue-600 rounded-xl" name="category2" value={category2} onChange={event => handleCategoryChange2(event.target.value)}>
+                  <option id="2" >None</option>
+                  <option id="3" >Startup</option>
+                  <option id="4" >Team</option>
+                  <option id="5" >Enterprise</option>
+              </select>
+              </div>
+            </div>
+            <br/>
+
+
+            <div className="bg-white flex sm:gap-14 gap-2 mb-7 ">
+            <label className="text-blue-600  font-medium">Cyber Security</label>
+               <select className="bg-white  px-4 py-3 border border-blue-600 rounded-xl" name="category3" value={category3} onChange={event => handleCategoryChange3(event.target.value)} required>
+                  <option id="6" >yes</option>
+                  <option id="7" >no</option>
+              </select>
+              <select className="bg-white px-4 py-3 border border-blue-600 rounded-xl" name="category4" value={category4} onChange={event => handleCategoryChange4(event.target.value)}>
+                  <option id="8" >None</option>
+                  <option id="9" >Free</option>
+                  <option id="10" >Enterprise</option>
               </select>
             </div>
 
@@ -115,22 +152,23 @@ const handleCategoryChange4 = (category4) => {
 
 
 
-            <div className="bg-white mx-auto">
-            <label className="text-blue-600 font-medium">Cyber Security</label>
-               <select className="bg-white ml-2 px-4 py-3 border border-blue-600 rounded-xl" name="category3" value={category3} onChange={event => handleCategoryChange3(event.target.value)} required>
-                  <option id="5" >yes</option>
-                  <option id="6" >no</option>
+            {/* <div className="bg-white mx-auto">
+            <label className="text-blue-600 text-center font-medium">Cyber Security</label>
+               <select className="bg-white ml-2 flex px-4 py-3 border border-blue-600 rounded-xl" name="category3" value={category3} onChange={event => handleCategoryChange3(event.target.value)} required>
+                  <option id="6" >yes</option>
+                  <option id="7" >no</option>
               </select>
             </div>
 
 
-            <div>
+            <div className="mx-auto">
                <select className="bg-white px-4 lg:mt-6 py-3 border border-blue-600 rounded-xl" name="category4" value={category4} onChange={event => handleCategoryChange4(event.target.value)}>
-                  <option id="7" >Free</option>
-                  <option id="8" >Enterprise</option>
+                  <option id="8" >None</option>
+                  <option id="9" >Free</option>
+                  <option id="10" >Enterprise</option>
               </select>
             </div>
-   
+    */}
 
             
 

@@ -17,7 +17,7 @@ const Header = () => {
       <div className="max-w-3xl flex justify-center text-center mx-auto">
         <Image className='h-16 w-16 rounded-full' src={logo} alt='logo'></Image>
        {/* <h1 className='text-white text-8xl ml-5 mt-5 '>|</h1> */}
-        <h1 className="block font-medium  mt-3  ml-5 text-gray-200  text-4xl">
+        <h1 className="block font-medium  mt-3  sm:ml-5 text-gray-200  text-4xl">
           | Ultimate Code Review
         </h1>
       </div>

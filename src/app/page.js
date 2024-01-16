@@ -14,38 +14,43 @@ export default function Home() {
   return (
     <div>
       {/* navbar */}
-      <Navbar/>
+      <Navbar />
 
       {/* header */}
-      <Header />
+      <div id="home">
+        <Header />
+      </div>
 
       {/* About Us */}
-      <About />
+      <div id="about">
+        <About />
+      </div>
 
       {/* our services */}
-      <Services />
-
+      <div id="services">
+        <Services />
+      </div>
+      
       {/* our clients */}
-      <Clients />
-
+      <div id="clients">
+        <Clients />
+      </div>
       {/* <Testimonials/> */}
 
       {/* sign up and prices  */}
-      <Pricing/>
-      <Pricing2/>
+      <div id="pricing">
+        <Pricing />
+        <Pricing2 />
+      </div>
+
 
       {/* Contact Us */}
       <div id="contact-us">
-        <ContactUs/>
+        <ContactUs />
       </div>
 
-      
-
       {/* footer */}
-      <Footer/>
-
-
-
+      <Footer />
     </div>
   );
 }
