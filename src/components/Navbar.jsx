@@ -1,6 +1,7 @@
 "use client"; 
 import React, { useState } from 'react';
-import logo from '../../public/logo.jpeg'
+import logo2 from '../../public/logo.jpeg'
+import logo from '../../public/ultimate-code-review.png'
 import Image from 'next/image'
 
 const Navbar = () => {
