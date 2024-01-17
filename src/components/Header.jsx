@@ -1,7 +1,8 @@
 import React from 'react'
 import ParticlesBackground from './ParticlesBackground'
 import logo2 from '../../public/logo.jpeg'
-import logo from '../../public/ultimate-code-review-removebg-preview.png'
+import logo3 from '../../public/ultimate-code-review-removebg-preview.png'
+import logo from '../../public/header.png'
 import Image from 'next/image'
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         
       {/* <!-- Title --> */}
       <div className="max-w-3xl flex justify-center text-center mx-auto">
-        <Image className='h- w-80 rounded-full' src={logo} alt='logo'></Image>
+        <Image  className='h- w-80 rounded' src={logo} alt='logo'></Image>
        
         {/* <h1 className="block font-medium  mt-3  sm:ml-5 text-gray-200  text-4xl">
           | Ultimate Code Review
@@ -24,7 +25,7 @@ const Header = () => {
       </div>
       {/* <!-- End Title --> */}
 
-      <div className="max-w-3xl text-center mx-auto">
+      <div className="max-w-3xl text-center mx-auto" style={{}}>
         <p className="text-lg text-gray-400">Test your application code for unexpected failures</p>
       </div>
 
