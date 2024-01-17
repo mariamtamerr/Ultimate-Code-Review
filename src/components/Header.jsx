@@ -16,7 +16,7 @@ const Header = () => {
     <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
         
       {/* <!-- Title --> */}
-      <div className="max-w-3xl flex justify-center text-center mx-auto">
+      <div className="max-w-3xl pt-10 flex justify-center text-center mx-auto">
         <Image  className='h- w-80 rounded' src={logo} alt='logo'></Image>
        
         {/* <h1 className="block font-medium  mt-3  sm:ml-5 text-gray-200  text-4xl">
