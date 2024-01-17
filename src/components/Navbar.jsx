@@ -19,7 +19,7 @@ const Navbar = () => {
   <nav className="relative  max-w-[85rem] w-full mx-auto px-4 sm:flex  sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
     <div className="flex items-center gap-20 justify-between">
       <div className='flex'>
-        <Image src={logo} height={100} width={100} className=' sm:w-64 w-32 ' alt='logo'></Image>
+        <Image src={logo} height={100} width={200} className=' sm:w-80 w-32 ' alt='logo'></Image>
         {/* <a className="flex-none text-xl mt-2 mr-20 ml-2 font-semibold dark:text-white" href="#" aria-label="Brand"> Ultimate Code Review</a> */}
       </div>
       {/* <div className="hidden bg-white rounded-lg ">
